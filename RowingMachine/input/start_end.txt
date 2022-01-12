@@ -1,0 +1,2120 @@
+[22/11/2021 20:57:39] 
+1 IRP_MJ_CREATE - Opens a COM port (COM4) 
+    STATUS_SUCCESS 
+        Opened by: 
+            C:\Program Files (x86)\Cybex International\Cybex International Fluid Coach Application Bundle\SessionRecorder.exe 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+3 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_PROPERTIES - Request returns information about the capabilities of a COM port 
+            wPacketLength        - 64 
+            wPacketVersion       - 2 
+            dwServiceMask        - 0x00000001 (SP_SERIALCOMM) 
+            dwMaxTxQueue         - 0 
+            dwMaxRxQueue         - 0 
+            dwMaxBaud            - 0x10000000 (Programmable baud rates available) 
+            dwProvSubType        - 0x00000001 (RS-232 serial port) 
+            dwProvCapabilities   - 0x000000ff (DTR and DSR | Interval timeouts | Parity checking | Receive Line Signal Detect | RTS and CTS | XON and XOFF | Total elapsed timeouts | XON and XOFF flow control) 
+            dwSettableParams     - 0x0000007f (Baud rate | Data bits | Handshaking (flow control) | Parity | Parity checking | Receive Line Signal Detect | Stop bits) 
+            dwSettableBaud       - 0x10066b70 (300 bps | 600 bps | 1200 bps | 2400 bps | 4800 bps | 9600 bps | 19200 bps | 38400 bps | 57600 bps | 115200 bps | Programmable baud rates available) 
+            wSettableData        - 0x0000000c (7 data bits | 8 data bits) 
+            wSettableStopParity  - 0x00001f05 (Even parity | Mark parity | No parity | Odd parity | Space parity | 1 stop bit | 2 stop bits) 
+            dwCurrentTxQueue     - 0 
+            dwCurrentRxQueue     - 4096 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+5 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_MODEMSTATUS - Request updates the modem status, and returns the value of the modem status register before the update 
+            Modem Status - 0x00000000  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+7 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_BAUD_RATE - Returns the baud rate that is currently set for a COM port 
+            BaudRate - 9600 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+9 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_LINE_CONTROL - Request returns information about the line control set for a COM port 
+            StopBits   - 0 (1 stop bit) 
+            Parity     - 0 (NO_PARITY) 
+            WordLength - 8 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+11 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_CHARS - Request returns the special characters that Serial uses with handshake flow control 
+            EofChar   - 26 
+            ErrorChar - 0 
+            BreakChar - 0 
+            EventChar - 26 
+            XonChar   - 17 
+            XoffChar  - 19 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+13 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_HANDFLOW - Request returns information about the configuration of the handshake flow control set for a COM port 
+            ControlHandShake - 0x00  
+            FlowReplace      - 0x00  
+            XonLimit         - 2048 
+            XoffLimit        - 512 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+15 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_BAUD_RATE - Returns the baud rate that is currently set for a COM port 
+            BaudRate - 9600 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+17 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_LINE_CONTROL - Request returns information about the line control set for a COM port 
+            StopBits   - 0 (1 stop bit) 
+            Parity     - 0 (NO_PARITY) 
+            WordLength - 8 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+19 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_CHARS - Request returns the special characters that Serial uses with handshake flow control 
+            EofChar   - 26 
+            ErrorChar - 0 
+            BreakChar - 0 
+            EventChar - 26 
+            XonChar   - 17 
+            XoffChar  - 19 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+21 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_HANDFLOW - Request returns information about the configuration of the handshake flow control set for a COM port 
+            ControlHandShake - 0x00  
+            FlowReplace      - 0x00  
+            XonLimit         - 2048 
+            XoffLimit        - 512 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+23 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_BAUD_RATE - Request sets the baud rate on a COM port. Serial verifies the specified baud rate 
+            BaudRate - 9600 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+25 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_RTS - Request clears the RTS control signal  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+27 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_DTR - Request clears the DTR control signal.  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+29 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_LINE_CONTROL - Request sets the line control register 
+            StopBits   - 0 (1 stop bit) 
+            Parity     - 0 (NO_PARITY) 
+            WordLength - 8 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+31 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_CHARS - Request sets the special characters that Serial uses for handshake flow control 
+            EofChar   - 26 
+            ErrorChar - 0 
+            BreakChar - 0 
+            EventChar - 26 
+            XonChar   - 17 
+            XoffChar  - 19 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+33 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_HANDFLOW - Request sets the configuration of handshake flow control 
+            ControlHandShake - 0x00  
+            FlowReplace      - 0x00  
+            XonLimit         - 1024 
+            XoffLimit        - 1024 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+35 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_BAUD_RATE - Returns the baud rate that is currently set for a COM port 
+            BaudRate - 9600 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+37 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_LINE_CONTROL - Request returns information about the line control set for a COM port 
+            StopBits   - 0 (1 stop bit) 
+            Parity     - 0 (NO_PARITY) 
+            WordLength - 8 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+39 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_CHARS - Request returns the special characters that Serial uses with handshake flow control 
+            EofChar   - 26 
+            ErrorChar - 0 
+            BreakChar - 0 
+            EventChar - 26 
+            XonChar   - 17 
+            XoffChar  - 19 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+41 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_HANDFLOW - Request returns information about the configuration of the handshake flow control set for a COM port 
+            ControlHandShake - 0x00  
+            FlowReplace      - 0x00  
+            XonLimit         - 1024 
+            XoffLimit        - 1024 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+43 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_BAUD_RATE - Request sets the baud rate on a COM port. Serial verifies the specified baud rate 
+            BaudRate - 9600 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+45 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_RTS - Request clears the RTS control signal  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+47 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_DTR - Request clears the DTR control signal.  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+49 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_LINE_CONTROL - Request sets the line control register 
+            StopBits   - 0 (1 stop bit) 
+            Parity     - 0 (NO_PARITY) 
+            WordLength - 8 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+51 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_CHARS - Request sets the special characters that Serial uses for handshake flow control 
+            EofChar   - 26 
+            ErrorChar - 0 
+            BreakChar - 0 
+            EventChar - 26 
+            XonChar   - 17 
+            XoffChar  - 19 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+53 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_HANDFLOW - Request sets the configuration of handshake flow control 
+            ControlHandShake - 0x00  
+            FlowReplace      - 0x00  
+            XonLimit         - 1024 
+            XoffLimit        - 1024 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+55 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_DTR - Request clears the DTR control signal.  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+57 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_TIMEOUTS - Request sets the timeout value's that the driver uses with read and write requests 
+            ReadIntervalTimeout         - -1 
+            ReadTotalTimeoutMultiplier  - -1 
+            ReadTotalTimeoutConstant    - 100 
+            WriteTotalTimeoutMultiplier - 0 
+            WriteTotalTimeoutConstant   - 100 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+59 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_WAIT_MASK - Request configures Serial to notify a client after the occurrence of any one of a specified set of wait events 
+            Mask - 0x000001fb (EV_BREAK | EV_CTS | EV_DSR | EV_ERR | EV_RING | EV_RLSD | EV_RXCHAR | EV_RXFLAG) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+61 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_QUEUE_SIZE - Request sets the size of the internal receive buffer 
+            InSize  - 4096 
+            OutSize - 2048 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+64 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            43 0a                                             C.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+65 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+67 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 5 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+69 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+71 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 7 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+74 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 7 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+76 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 7 bytes of 7 
+    STATUS_SUCCESS 
+            43 31 31 35 34 0d 0a                              C1154..          
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+78 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+80 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+82 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+84 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+86 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+88 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+90 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+92 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            54 0a                                             T.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+93 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+95 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 4 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+98 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 4 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+100 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 4 bytes of 4 
+    STATUS_SUCCESS 
+            54 38 0d 0a                                       T8..             
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+102 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+104 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+106 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+108 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+110 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            56 0a                                             V.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+111 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+113 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 11 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+116 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 11 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+118 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 11 bytes of 11 
+    STATUS_SUCCESS 
+            56 31 31 35 30 37 31 35 20 0d 0a                  V1150715 ..      
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+120 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+122 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+124 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+126 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+128 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+130 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+132 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+134 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+136 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+138 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+140 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+142 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            4c 0a                                             L.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+143 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:39] 
+145 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 4 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+148 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 4 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+150 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 4 bytes of 4 
+    STATUS_SUCCESS 
+            4c 32 0d 0a                                       L2..             
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+152 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+154 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+156 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+158 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+160 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            48 0a                                             H.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+161 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+163 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 6 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+166 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 6 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+168 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 6 bytes of 6 
+    STATUS_SUCCESS 
+            48 30 30 30 0d 0a                                 H000..           
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+170 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+172 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+174 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+176 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+178 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+180 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+182 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_TIMEOUTS - Request sets the timeout value's that the driver uses with read and write requests 
+            ReadIntervalTimeout         - -1 
+            ReadTotalTimeoutMultiplier  - -1 
+            ReadTotalTimeoutConstant    - 100 
+            WriteTotalTimeoutMultiplier - 0 
+            WriteTotalTimeoutConstant   - 100 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+185 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 2 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+187 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 2 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+189 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            52 0a                                             R.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+190 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 1 bytes of 2 
+    STATUS_SUCCESS 
+            52                                                R                
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+191 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+193 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+196 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+198 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            0d 0a                                             ..               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+200 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+202 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+204 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+206 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+208 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+210 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+213 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+215 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+217 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+219 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+221 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+223 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+225 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+227 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+229 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+231 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+233 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+235 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+237 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:40] 
+239 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+241 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+243 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+245 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+247 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+249 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            52 0a                                             R.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+250 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 1 bytes of 2 
+    STATUS_SUCCESS 
+            52                                                R                
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+251 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+253 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+256 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+258 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            0d 0a                                             ..               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+260 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+262 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+264 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+266 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+268 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+270 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+272 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+274 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+277 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            52 0a                                             R.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+278 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 1 bytes of 2 
+    STATUS_SUCCESS 
+            52                                                R                
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+279 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000001 (EV_RXCHAR) 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+281 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+284 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 2 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+286 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            0d 0a                                             ..               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+288 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+290 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+292 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+294 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+296 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+298 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+300 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+302 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+304 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+306 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+308 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+310 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+312 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+314 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:41] 
+316 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+318 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+320 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+322 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+324 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+326 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+328 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+330 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+332 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+334 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+336 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+338 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+340 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+342 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+344 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+346 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+348 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+350 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+352 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+354 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+356 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+358 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+360 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+362 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:42] 
+364 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+366 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+368 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+370 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+372 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+374 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+376 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+378 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+380 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+382 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+384 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+386 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+388 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+390 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+392 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+394 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+396 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+398 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+400 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+402 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+404 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+406 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+408 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+410 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:43] 
+412 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+414 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+416 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+418 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+420 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+422 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+424 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+426 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+428 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+430 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+432 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+434 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+436 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+438 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+440 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+442 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+444 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+446 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+448 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+450 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+452 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+454 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+456 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+458 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:44] 
+460 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+462 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+464 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+466 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+468 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+470 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+472 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_GET_COMMSTATUS - Request returns information about the communication status of a COM port 
+            Errors           - 0 
+            HoldReasons      - 0 
+            AmountInInQueue  - 0 
+            AmountInOutQueue - 0 
+            EofReceived      - 0 
+            WaitForImmediate - 0 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+474 IRP_MJ_READ - Transfers data from a COM port to a client (COM4) - 0 bytes of 2 
+    STATUS_TIMEOUT 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+476 IRP_MJ_WRITE - Request transfers data from a client to a COM port (COM4) - 2 bytes of 2 
+    STATUS_SUCCESS 
+            44 0a                                             D.               
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+478 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_WAIT_ON_MASK - Request is used to wait for the occurrence of any wait event specified by using an IOCTL_SERIAL_SET_WAIT_MASK request 
+            Mask - 0x00000000  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+479 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_SET_WAIT_MASK - Request configures Serial to notify a client after the occurrence of any one of a specified set of wait events 
+            Mask - 0x00000000  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+481 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_CLR_DTR - Request clears the DTR control signal.  
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+483 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers 
+            Flags - 0x0000000a 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+485 IRP_MJ_DEVICE_CONTROL - Request operates a serial port (COM4) 
+    STATUS_SUCCESS 
+        IOCTL_SERIAL_PURGE - Request cancels the specified requests and deletes data from the specified buffers 
+            Flags - 0x00000005 
+---------------------------------------------------------------------------------- 
+[22/11/2021 20:57:45] 
+487 IRP_MJ_CLOSE - Close a COM port (COM4) 
+    STATUS_SUCCESS 
+---------------------------------------------------------------------------------- 
