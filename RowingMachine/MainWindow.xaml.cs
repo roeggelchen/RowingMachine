@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -32,6 +33,34 @@ namespace RowingMachineApp
             myMachine = new RowingMachine();
             DataContext = myMachine;
             cbxComPorts.DataContext = ComPorts;
+
+
+            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+            httpWebRequest.ContentType = "application/json";
+            httpWebRequest.Method = "POST";
+
+            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            {
+                //string json = "{\"user\":\"test\"," +
+                //              "\"password\":\"bla\"}";
+                string json = "{\"com_port\": \"TEst VS\"," +
+                                "\"c\": \"C\"," +
+                                "\"t\": \"T\"," +
+                                "\"version\": \"V\"," +
+                                "\"max_level\": 3," +
+                                "\"h\": \"H\"," +
+                                "\"start_time\": \"2022-01-14T23:49:00+01:00\"," +
+                                "\"end_time\": \"2022-01-14T23:49:00+01:00\"}";
+
+                //string json = "{\"com_port\":\"COM_VS\",\"c\":\"C\",\"t\":\"T\",\"version\":\"V\",\"max_level\":3,\"h\":\"H\",\"start_time\":\"2022-01-14T23:29:00+01:00\",\"end_time\":\"2022-01-14T23:46:00+01:00\"}";
+
+                streamWriter.Write(json);
+            }
+            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            {
+                var result = streamReader.ReadToEnd();
+            }
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
