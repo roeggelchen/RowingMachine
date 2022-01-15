@@ -67,10 +67,17 @@ namespace RowingMachineApp
         {
             get { return _level; }
         }
+
         private string _message;
         public string Message
         {
             get { return _message; }
+        }
+
+        private DateTime _timestamp;
+        public DateTime TimeStamp
+        {
+            get { return _timestamp; }
         }
 
         public event PropertyChangedEventHandler PropertyChanged;
@@ -120,6 +127,7 @@ namespace RowingMachineApp
 
         public RowingStroke(string fromMessage)
         {
+            _timestamp = DateTime.Now;
             UpdateStrokeFromMessage(fromMessage);
         }
     }

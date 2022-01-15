@@ -1,8 +1,12 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.IO;
 using System.IO.Ports;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -81,6 +85,10 @@ namespace RowingMachineApp
         //private Variables 
         SerialPort machineSerial;
 
+        //DB
+        HttpWebRequest httpWebRequest;
+
+
         public event PropertyChangedEventHandler PropertyChanged;
         public void OnPropertyChanged(PropertyChangedEventArgs e)
         {
@@ -110,7 +118,12 @@ namespace RowingMachineApp
 
             machineSerial.Open();
 
-            if(IsConnected)
+            //DB
+            //httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+            //httpWebRequest.ContentType = "application/json";
+            //httpWebRequest.Method = "POST";
+
+            if (IsConnected)
             {
                 machineSerial.WriteLine("C");
                 while (!_receivedLine) { }
@@ -142,6 +155,43 @@ namespace RowingMachineApp
             if (IsConnected)
             {
                 _currentSession = new RowingSession();
+
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+                httpWebRequest.ContentType = "application/json";
+                httpWebRequest.Method = "POST";
+
+                using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+                {
+                    //string json = "{\"com_port\": \"" + _comPort + "\"," +
+                    //                "\"c\": \"" + _c + "\"," +
+                    //                "\"t\": \"" + _t + "\"," +
+                    //                "\"version\": \"" + _version + "\"," +
+                    //                "\"max_level\": \"" + _maxLevel + "\"," +
+                    //                "\"h\": \"" + _h + "\"," +
+                    //                "\"start_time\": \"" + DateTime.Now.ToString("yyyy-mm-ddTHH:mm:sszzz") + "\"," +
+                    //                "\"end_time\": \"" + DateTime.Now.ToString("yyyy-mm-ddTHH:mm:sszzz") + "\"}";
+                    //string blub = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
+                    string json =   "{\"com_port\": \"" + _comPort + "\"," +
+                                    "\"c\": \"" + _c + "\"," +
+                                    "\"t\": \"" + _t + "\"," +
+                                    "\"version\": \"" + _version + "\"," +
+                                    "\"max_level\": \"" + _maxLevel + "\"," +
+                                    "\"h\": \"" + _h + "\"," +
+                                    "\"start_time\": \"" + DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz") + "\"," +
+                                    "\"end_time\": \"" + DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz") + "\"}";
+
+                    streamWriter.Write(json);
+                }
+
+                var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+                using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+                {
+                    var result = streamReader.ReadToEnd();
+                    //string json = "{ \"Atlantic/Canary\": \"GMT Standard Time\", \"Europe/Lisbon\": \"GMT Standard Time\", \"Antarctica/Mawson\": \"West Asia Standard Time\", \"Etc/GMT+3\": \"SA Eastern Standard Time\", \"Etc/GMT+2\": \"UTC-02\", \"Etc/GMT+1\": \"Cape Verde Standard Time\", \"Etc/GMT+7\": \"US Mountain Standard Time\", \"Etc/GMT+6\": \"Central America Standard Time\", \"Etc/GMT+5\": \"SA Pacific Standard Time\", \"Etc/GMT+4\": \"SA Western Standard Time\", \"Pacific/Wallis\": \"UTC+12\", \"Europe/Skopje\": \"Central European Standard Time\", \"America/Coral_Harbour\": \"SA Pacific Standard Time\", \"Asia/Dhaka\": \"Bangladesh Standard Time\", \"America/St_Lucia\": \"SA Western Standard Time\", \"Asia/Kashgar\": \"China Standard Time\", \"America/Phoenix\": \"US Mountain Standard Time\", \"Asia/Kuwait\": \"Arab Standard Time\" }";
+                    var data = (JObject)JsonConvert.DeserializeObject(result);
+                    int id = data["id"].Value<int>();
+                    CurrentSession.SQLSessionID = id;
+                }
 
                 machineSerial.WriteLine("R");
                 return true;

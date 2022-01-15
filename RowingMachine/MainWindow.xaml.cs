@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using System;
 using System.Collections.Generic;
 using System.IO;
 using System.IO.Ports;
@@ -35,32 +37,38 @@ namespace RowingMachineApp
             cbxComPorts.DataContext = ComPorts;
 
 
-            var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
-            httpWebRequest.ContentType = "application/json";
-            httpWebRequest.Method = "POST";
+            //var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+            //httpWebRequest.ContentType = "application/json";
+            //httpWebRequest.Method = "POST";
 
-            using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
-            {
-                //string json = "{\"user\":\"test\"," +
-                //              "\"password\":\"bla\"}";
-                string json = "{\"com_port\": \"TEst VS\"," +
-                                "\"c\": \"C\"," +
-                                "\"t\": \"T\"," +
-                                "\"version\": \"V\"," +
-                                "\"max_level\": 3," +
-                                "\"h\": \"H\"," +
-                                "\"start_time\": \"2022-01-14T23:49:00+01:00\"," +
-                                "\"end_time\": \"2022-01-14T23:49:00+01:00\"}";
+            //using (var streamWriter = new StreamWriter(httpWebRequest.GetRequestStream()))
+            //{
+            //    //DateTime jetzt = DateTime.Now;
+            //    //string blub = jetzt.ToString();
+            //    //string blub2 = jetzt.ToString("yyyy-mm-ddTHH:mm:sszzz");
 
-                //string json = "{\"com_port\":\"COM_VS\",\"c\":\"C\",\"t\":\"T\",\"version\":\"V\",\"max_level\":3,\"h\":\"H\",\"start_time\":\"2022-01-14T23:29:00+01:00\",\"end_time\":\"2022-01-14T23:46:00+01:00\"}";
+            //    //string json = "{\"user\":\"test\"," +
+            //    //              "\"password\":\"bla\"}";
+            //    string json = "{\"com_port\": \"TEst VS\"," +
+            //                    "\"c\": \"C\"," +
+            //                    "\"t\": \"T\"," +
+            //                    "\"version\": \"V\"," +
+            //                    "\"max_level\": 3," +
+            //                    "\"h\": \"H\"," +
+            //                    "\"start_time\": \"2022-01-14T23:49:00+01:00\"," +
+            //                    "\"end_time\": \"2022-01-14T23:49:00+01:00\"}";
 
-                streamWriter.Write(json);
-            }
-            var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
-            using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
-            {
-                var result = streamReader.ReadToEnd();
-            }
+            //    //string json = "{\"com_port\":\"COM_VS\",\"c\":\"C\",\"t\":\"T\",\"version\":\"V\",\"max_level\":3,\"h\":\"H\",\"start_time\":\"2022-01-14T23:29:00+01:00\",\"end_time\":\"2022-01-14T23:46:00+01:00\"}";
+
+            //    streamWriter.Write(json);
+            //}
+            //var httpResponse = (HttpWebResponse)httpWebRequest.GetResponse();
+            //using (var streamReader = new StreamReader(httpResponse.GetResponseStream()))
+            //{
+            //    var result = streamReader.ReadToEnd();
+            //    var data = (JObject)JsonConvert.DeserializeObject(result);
+            //    int id = data["id"].Value<int>();
+            //}
         }
 
         private void btnStart_Click(object sender, RoutedEventArgs e)
