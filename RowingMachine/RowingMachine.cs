@@ -119,7 +119,7 @@ namespace RowingMachineApp
             machineSerial.Open();
 
             //DB
-            //httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+            //httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.178.100:8000/rowing/api/v1/rowingsession/");
             //httpWebRequest.ContentType = "application/json";
             //httpWebRequest.Method = "POST";
 
@@ -156,7 +156,7 @@ namespace RowingMachineApp
             {
                 _currentSession = new RowingSession();
 
-                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingsession/");
+                var httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.178.100:8000/rowing/api/v1/rowingsession/");
                 httpWebRequest.ContentType = "application/json";
                 httpWebRequest.Method = "POST";
 
@@ -171,12 +171,14 @@ namespace RowingMachineApp
                     //                "\"start_time\": \"" + DateTime.Now.ToString("yyyy-mm-ddTHH:mm:sszzz") + "\"," +
                     //                "\"end_time\": \"" + DateTime.Now.ToString("yyyy-mm-ddTHH:mm:sszzz") + "\"}";
                     //string blub = DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz");
-                    string json =   "{\"com_port\": \"" + _comPort + "\"," +
+                    string json =   "{\"user\": \"" + _currentSession.User + "\"," +
+                                    "\"com_port\": \"" + _comPort + "\"," +
                                     "\"c\": \"" + _c + "\"," +
                                     "\"t\": \"" + _t + "\"," +
                                     "\"version\": \"" + _version + "\"," +
                                     "\"max_level\": \"" + _maxLevel + "\"," +
                                     "\"h\": \"" + _h + "\"," +
+                                    "\"distance\": \"" + _currentSession.CurrentDistance + "\"," +
                                     "\"start_time\": \"" + DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz") + "\"," +
                                     "\"end_time\": \"" + DateTime.Now.ToString("yyyy-MM-ddTHH:mm:sszzz") + "\"}";
 

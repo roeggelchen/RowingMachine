@@ -24,6 +24,26 @@ namespace RowingMachineApp
             get { return _currentStroke; }
         }
 
+        private int _currentDistance;
+
+        public int CurrentDistance
+        {
+            get {
+                if (_currentStroke != null)
+                    return _currentStroke.Distance; 
+                else {
+                    return 0; 
+                }; 
+            }
+        }
+
+        private string _user = "Simon";
+
+        public string User
+        {
+            get { return _user; }
+        }
+
         private int _sqlSessionID;
         public int SQLSessionID
         {
@@ -74,7 +94,7 @@ namespace RowingMachineApp
             OnPropertyChanged(new PropertyChangedEventArgs("CurrentStroke"));
             outputCSV.WriteLine(stroke.T + Seperator + stroke.Duration + Seperator + stroke.Distance + Seperator + stroke.One + Seperator + stroke.Speed + Seperator + stroke.StrokesPerMinute + Seperator + stroke.Watts + Seperator + stroke.Calories + Seperator + stroke.Zero + Seperator + stroke.Level + Seperator + stroke.Message.Substring(0,29));
 
-            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("http://127.0.0.1:8000/rowing/api/v1/rowingstroke/");
+            HttpWebRequest httpWebRequest = (HttpWebRequest)WebRequest.Create("http://192.168.178.100:8000/rowing/api/v1/rowingstroke/");
             httpWebRequest.ContentType = "application/json";
             httpWebRequest.Method = "POST";
 
